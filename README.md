@@ -34,6 +34,6 @@ Press space to select it :
 ❯◉ widget-ctrl-lite-themelet
 ```
 
-# Licence
+# License
 
-[LGPL-2.1](LICENCE)
+[LGPL-2.1](LICENSE)
