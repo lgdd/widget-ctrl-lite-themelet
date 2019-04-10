@@ -1,0 +1,105 @@
+.portlet:not(:hover):not(.open) .portlet-title-default,
+.portlet:not(:hover):not(.open) .portlet-topper-toolbar-wrapper {
+  display: none;
+}
+
+.portlet:not(:hover) .portlet-topper {
+  transition: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .portlet.open > .portlet-topper,
+  .portlet:hover > .portlet-topper,
+  .portlet.focus > .portlet-topper {
+    align-items: center;
+    background: $primary;
+    border: 0;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    left: calc(50% - 40px);
+    opacity: 1;
+    padding: 0;
+    transform: none;
+    transition: none;
+    width: 80px;
+    z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .portlet.open > .portlet-content-editable,
+  .portlet:hover > .portlet-content-editable,
+  .portlet.focus > .portlet-content-editable {
+    border-radius: 4px;
+    box-shadow: 0 0 4px 1px $primary;
+  }
+}
+
+.portlet-content-editable {
+  border-radius: 8px;
+  border-width: 0;
+  min-height: 28px;
+}
+
+.portlet-title-default {
+  background: $primary;
+  border-radius: 8px 8px 0 0;
+  bottom: 100%;
+  color: white;
+  font-size: 12px;
+  left: 50%;
+  line-height: 1.7;
+  padding: 0 15px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.portlet-topper-toolbar-wrapper {
+  background: $primary;
+  border-radius: 21px;
+  bottom: 5px;
+  color: white;
+  display: flex;
+  fill: white;
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+  transform-origin: right bottom;
+  transition: transform ease 200ms;
+  z-index: 10;
+
+  @media (hover: hover) {
+    .portlet:not(.open) &:not(:hover) {
+      transform: scale(0.4);
+
+      .portlet-topper-toolbar {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.portlet-topper-toolbar > a,
+.portlet-topper-toolbar > span > a,
+.portlet-topper-toolbar .lfr-icon-menu > a {
+  color: $white;
+}
+
+.portlet-borderless .portlet-title-text {
+  display: block;
+  max-width: 100%;
+}
+
+.portlet-layout .portlet-header {
+  margin-bottom: 0;
+}
+
+.portlet-header-tools {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

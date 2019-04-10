@@ -1,0 +1,24 @@
+{
+	"name": "widget-ctrl-lite-themelet",
+	"version": "1.0.0",
+	"licence": "LGPL-2.1-only",
+	"repository": "github:lgdd/widget-ctrl-lite-themelet",
+	"main": "package.json",
+	"keywords": [
+		"liferay-theme",
+		"liferay-theme",
+		"liferay-themelet",
+		"liferay",
+		"themelet",
+		"theme",
+		"widget",
+		"portlet",
+		"topper",
+		"portlet-topper"
+	],
+	"liferayTheme": {
+		"screenshot": "",
+		"themelet": true,
+		"version": "*"
+	}
+}
